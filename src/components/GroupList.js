@@ -1,10 +1,18 @@
 import React from "react";
-import 
+import Follow1 from "../assets/Follow1.png";
+import Follow2 from "../assets/Follow2.png";
+import Follow3 from "../assets/Follow3.png";
+import Follow4 from "../assets/Follow4.png";
+import Vector from "../assets/Vector.png";
+import location1 from "../assets/locationSimbol.png";
+import location2 from "../assets/locationSimbol2.png";
+import location3 from "../assets/locationSimbol3.png";
+
 const groups = [
-  { name: "Leisure", img: "./images/Follow1.png" },
-  { name: "Activism", img: "./images/Follow2.png" },
-  { name: "MBA", img: "./images/Follow3.png" },
-  { name: "Philosophy", img: "./images/Follow4.png" },
+  { name: "Leisure", img: Follow1 },
+  { name: "Activism", img: Follow2 },
+  { name: "MBA", img: Follow3 },
+  { name: "Philosophy", img: Follow4 },
 ];
 
 const GroupList = () => {
@@ -12,23 +20,19 @@ const GroupList = () => {
     <div className="card mb-4">
       <div className="card-body">
         <div className="d-flex align-items-center mb-3">
-          <img
-            src="./images/locationSimbol.png"
-            className="me-2"
-            alt="location"
-          />
+          <img src={location1} className="me-2" alt="location" />
           <input
             type="text"
             className="form-control border-0 p-0"
             placeholder="Enter Your Location"
           />
           <button className="btn btn-link p-0">
-            <img src="./images/locationSimbol2.png" alt="edit" />
+            <img src={location2} alt="edit" />
           </button>
         </div>
         <hr className="thick-line" />
         <div className="d-flex align-items-center text-muted small mb-4">
-          <img src="./images/locationSimbol3.png" className="me-2" alt="info" />
+          <img src={location3} className="me-2" alt="info" />
           <span>
             Your location will help us serve better and extend a personalised
             experience.
@@ -36,7 +40,7 @@ const GroupList = () => {
         </div>
         <div className="recommended-groups">
           <h6 className="d-flex align-items-center mb-4">
-            <img src="./images/Vector.png" className="me-2" alt="like" />
+            <img src={Vector} className="me-2" alt="like" />
             RECOMMENDED GROUPS
           </h6>
           {groups.map((group) => (
