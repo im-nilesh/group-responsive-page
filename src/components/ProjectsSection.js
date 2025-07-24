@@ -28,6 +28,7 @@ const ProjectsSection = () => {
             authorImg={Author1}
             views="1.4k views"
           />
+
           <PostCard
             image={Article2}
             typeLogo={EducationLogo}
@@ -36,6 +37,7 @@ const ProjectsSection = () => {
             authorImg={Author2}
             views="1.4k views"
           />
+
           <PostCard
             image={Article3}
             typeLogo={MeetupLogo}
@@ -43,7 +45,10 @@ const ProjectsSection = () => {
             author="Ronal Jones"
             authorImg={Author3}
             views="800 views"
+            buttonText="Visit My Website"
+            buttonVariant="danger"
           />
+
           <PostCard
             image={null}
             typeLogo={JobLogo}
@@ -51,6 +56,8 @@ const ProjectsSection = () => {
             author="Joseph Gray"
             authorImg={Author4}
             views="1.7k views"
+            buttonText="Apply on Timejobs"
+            buttonVariant="success"
           />
         </div>
 

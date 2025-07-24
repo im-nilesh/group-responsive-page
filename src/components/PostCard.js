@@ -1,4 +1,7 @@
 import React from "react";
+import menu from "../assets/3dot.png";
+import share from "../assets/share.png";
+import "./PostCard.css"; // Ensure this file contains .custom-btn styles
 
 const PostCard = ({
   image,
@@ -8,7 +11,6 @@ const PostCard = ({
   authorImg,
   views,
   buttonText,
-  buttonVariant,
 }) => {
   return (
     <div className="card mb-4">
@@ -22,7 +24,7 @@ const PostCard = ({
           <h5 className="card-title">{title}</h5>
           <div className="position-relative">
             <img
-              src="./images/3dot.png"
+              src={menu}
               className="pe-2 dropdown-toggle"
               alt="menu"
               style={{ cursor: "pointer" }}
@@ -33,9 +35,7 @@ const PostCard = ({
         {/* Optional Button */}
         {buttonText && (
           <div className="w-100 pt-2">
-            <button className="custom-button">
-              <span className={`text-${buttonVariant}`}>{buttonText}</span>
-            </button>
+            <button className="custom-btn">{buttonText}</button>
           </div>
         )}
 
@@ -51,9 +51,7 @@ const PostCard = ({
               {views}
             </div>
             <button className="btn btn-light">
-              <i className="bi bi-share">
-                <img src="./images/share.png" alt="share" />
-              </i>
+              <img src={share} alt="share" />
             </button>
           </div>
         </div>
