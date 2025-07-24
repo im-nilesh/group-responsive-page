@@ -1,15 +1,19 @@
 import React from "react";
-import Header from "./components/Header";
-import GroupList from "./components/GroupList";
+import "bootstrap/dist/css/bootstrap.min.css";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <Header />
-      <div className="container mt-4">
-        <h2 className="mb-4">Groups</h2>
-        <GroupList />
-      </div>
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
