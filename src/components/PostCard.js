@@ -20,10 +20,14 @@ const PostCard = ({
 
       <div className="card-body">
         {typeLogo && (
-          <img src={typeLogo} className="post-type mb-4" alt="type logo" />
+          <img
+            src={typeLogo}
+            className="post-type mb-4 d-block"
+            alt="type logo"
+          />
         )}
 
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between">
           <h5 className="card-title">{title}</h5>
 
           {/* Dropdown Trigger */}
