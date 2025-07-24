@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import menu from "../assets/3dot.png";
 import share from "../assets/share.png";
-import "./PostCard.css"; // Ensure this file contains .custom-btn styles
+import "./PostCard.css"; // Custom styles
 
 const PostCard = ({
   image,
@@ -12,9 +12,12 @@ const PostCard = ({
   views,
   buttonText,
 }) => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <div className="card mb-4">
       {image && <img src={image} className="card-img-top" alt={title} />}
+
       <div className="card-body">
         {typeLogo && (
           <img src={typeLogo} className="post-type mb-4" alt="type logo" />
@@ -22,20 +25,35 @@ const PostCard = ({
 
         <div className="d-flex justify-content-between align-items-center">
           <h5 className="card-title">{title}</h5>
+
+          {/* Dropdown Trigger */}
           <div className="position-relative">
             <img
               src={menu}
               className="pe-2 dropdown-toggle"
               alt="menu"
               style={{ cursor: "pointer" }}
+              onClick={() => setShowDropdown(!showDropdown)}
             />
+
+            {/* Custom Dropdown */}
+            {showDropdown && (
+              <div className="custom-dropdown position-absolute end-0 bg-white border rounded shadow">
+                <ul className="list-unstyled m-0 p-2">
+                  <li className="dropdown-item">Edit</li>
+                  <li className="dropdown-item">Report</li>
+                  <li className="dropdown-item">Option 3</li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
 
-        {/* Optional Button */}
         {buttonText && (
           <div className="w-100 pt-2">
-            <button className="custom-btn">{buttonText}</button>
+            <button className="custom-btn">
+              <span className="text-danger">{buttonText}</span>
+            </button>
           </div>
         )}
 

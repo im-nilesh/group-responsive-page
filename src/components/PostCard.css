@@ -12,3 +12,28 @@
   font-size: 16px;
   background-color: white;
 }
+.custom-dropdown {
+  min-width: 140px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 4px 0;
+  z-index: 1050;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #212529;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: left; /* Ensure left alignment */
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa; /* Subtle hover background */
+}
