@@ -1,17 +1,36 @@
-// src/components/ProjectsSection.js
 import React from "react";
-import "./ProjectsSection.css";
+import PostCard from "./PostCard";
 import GroupList from "./GroupList";
 
-function ProjectsSection() {
+const ProjectsSection = () => {
   return (
-    <section id="projects" className="projects-section py-5">
-      <div className="container">
-        <h2 className="text-center mb-5 text-white">My Projects</h2>
-        <GroupList />
+    <div className="container">
+      <div className="row">
+        <div className="col-12 col-lg-8">
+          <PostCard
+            image="./images/Article1.png"
+            typeLogo="./images/ArticleLogo.png"
+            title="What if famous brands had regular fonts? Meet RegulaBrands!"
+            author="Sarthak Kamra"
+            authorImg="./images/Owner 1.png"
+            views="1.4k views"
+          />
+          <PostCard
+            image="./images/Article 2.png"
+            typeLogo="./images/EducationLogo.png"
+            title="Tax Benefits for Investment under National Pension Scheme"
+            author="Sarah West"
+            authorImg="./images/Owner 2.png"
+            views="1.4k views"
+          />
+          {/* Add more PostCard components similarly */}
+        </div>
+        <div className="col-lg-4 d-none d-lg-block">
+          <GroupList />
+        </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default ProjectsSection;

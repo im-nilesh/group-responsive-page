@@ -1,22 +1,18 @@
-// src/App.js
 import React from "react";
-import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
+import FeedNav from "./components/FeedNav";
 import ProjectsSection from "./components/ProjectsSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
+import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Header />
       <HeroSection />
-      <AboutSection />
+      <FeedNav />
       <ProjectsSection />
-      <ContactSection />
-      <Footer />
-    </>
+    </div>
   );
 }
 
