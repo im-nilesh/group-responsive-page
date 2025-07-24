@@ -1,5 +1,5 @@
 import React from "react";
-
+import 
 const groups = [
   { name: "Leisure", img: "./images/Follow1.png" },
   { name: "Activism", img: "./images/Follow2.png" },
