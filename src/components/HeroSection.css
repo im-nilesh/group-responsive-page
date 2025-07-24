@@ -1,25 +1,31 @@
-/* src/components/HeroSection.css */
 .hero {
-  height: 100vh;
-  background: linear-gradient(to right, #000000cc, #1f1f1fdd),
-    url("https://images.unsplash.com/photo-1531496743007-09c64aa1a1d7?auto=format&fit=crop&w=1350&q=80")
-      no-repeat center center;
-  background-size: cover;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
   color: white;
-  text-align: center;
-  padding-top: 120px;
+  text-align: left;
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
-  color: #ccc;
-}
-
-.highlight {
-  color: #0d6efd;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
 }
