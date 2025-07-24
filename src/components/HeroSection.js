@@ -1,22 +1,21 @@
-// src/components/HeroSection.js
 import React from "react";
-import "./HeroSection.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import bannerImage from "../assets/Rectangle 2.png"; // Place your image accordingly
 
-function HeroSection() {
+const HeroSection = () => {
   return (
-    <section id="hero" className="hero d-flex align-items-center">
-      <div className="container text-center">
-        <h1 className="hero-title">
-          Hi, I'm <span className="highlight">Nadeem</span>
-        </h1>
-        <p className="hero-subtitle">Frontend Developer | React Enthusiast</p>
-        <a href="#projects" className="btn btn-primary mt-3">
-          View Projects
-        </a>
+    <header className="position-relative mb-4">
+      <img
+        src={bannerImage}
+        alt="Computer Engineering"
+        className="w-100"
+        style={{ objectFit: "cover", maxHeight: "400px" }}
+      />
+      <div className="position-absolute bottom-0 text-white p-4 bg-dark bg-opacity-50 w-100">
+        <h1 className="fs-2 fw-bold">Computer Engineering</h1>
+        <p className="mb-0">142,765 Computer Engineers follow this</p>
       </div>
-    </section>
+    </header>
   );
-}
+};
 
 export default HeroSection;
