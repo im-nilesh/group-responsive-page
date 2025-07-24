@@ -5,6 +5,7 @@ const FeedNav = () => {
     <div className="feed-nav mb-4">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
+          {/* Nav Tabs */}
           <ul className="nav">
             <li className="nav-item">
               <a className="nav-link active" href="#">
@@ -32,10 +33,14 @@ const FeedNav = () => {
               </a>
             </li>
           </ul>
+
+          {/* Buttons and Dropdown */}
           <div className="d-flex gap-2">
+            {/* Mobile Dropdown */}
             <div className="dropdown d-md-none">
               <button
                 className="btn btn-light dropdown-toggle"
+                type="button"
                 data-bs-toggle="dropdown"
               >
                 Filter: All
@@ -68,14 +73,18 @@ const FeedNav = () => {
                 </li>
               </ul>
             </div>
+
+            {/* Desktop Buttons */}
             <button className="btn btn-light d-none d-md-block">
               Write Post <i className="bi bi-caret-down-fill ms-2"></i>
             </button>
+
             <button className="btn btn-primary">
               <i className="bi bi-people-fill me-2"></i>Join Group
             </button>
           </div>
         </div>
+
         <hr className="feedNav" />
       </div>
     </div>
