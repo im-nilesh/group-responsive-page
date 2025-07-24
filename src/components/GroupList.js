@@ -1,42 +1,33 @@
+// src/components/GroupList.js
 import React from "react";
 import GroupCard from "./GroupCard";
-import { Row, Col } from "react-bootstrap";
 
-const groups = [
+const projects = [
   {
-    id: 1,
-    title: "Music Lovers",
-    description: "A group for those who love music.",
-    image: "https://via.placeholder.com/300x150",
+    title: "Project One",
+    desc: "A frontend project built with React and Bootstrap.",
+    link: "#",
   },
   {
-    id: 2,
-    title: "Fitness Freaks",
-    description: "Workout and stay healthy together.",
-    image: "https://via.placeholder.com/300x150",
+    title: "Project Two",
+    desc: "A responsive landing page using HTML, CSS, and JS.",
+    link: "#",
   },
   {
-    id: 3,
-    title: "Book Club",
-    description: "Let’s read and discuss books.",
-    image: "https://via.placeholder.com/300x150",
-  },
-  {
-    id: 4,
-    title: "Travel Enthusiasts",
-    description: "Explore the world with us.",
-    image: "https://via.placeholder.com/300x150",
+    title: "Project Three",
+    desc: "A portfolio website with smooth scroll and custom design.",
+    link: "#",
   },
 ];
 
-const GroupList = () => (
-  <Row>
-    {groups.map((group) => (
-      <Col xs={12} sm={6} lg={4} className="mb-4" key={group.id}>
-        <GroupCard {...group} />
-      </Col>
-    ))}
-  </Row>
-);
+function GroupList() {
+  return (
+    <div className="row">
+      {projects.map((project, index) => (
+        <GroupCard key={index} {...project} />
+      ))}
+    </div>
+  );
+}
 
 export default GroupList;

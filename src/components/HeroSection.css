@@ -1,20 +1,25 @@
-.hero-section {
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+/* src/components/HeroSection.css */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #000000cc, #1f1f1fdd),
+    url("https://images.unsplash.com/photo-1531496743007-09c64aa1a1d7?auto=format&fit=crop&w=1350&q=80")
+      no-repeat center center;
+  background-size: cover;
   color: white;
+  text-align: center;
+  padding-top: 120px;
 }
 
-.hero-section h1 {
-  font-size: 2.5rem;
+.hero-title {
+  font-size: 3rem;
   font-weight: bold;
 }
 
-.hero-section h3 {
+.hero-subtitle {
   font-size: 1.5rem;
-  margin-top: 10px;
+  color: #ccc;
 }
 
-.hero-section p {
-  margin-top: 15px;
-  font-size: 1rem;
+.highlight {
+  color: #0d6efd;
 }

@@ -1,17 +1,25 @@
+// src/components/GroupCard.js
 import React from "react";
-import { Card, Button } from "react-bootstrap";
 
-const GroupCard = ({ title, description, image }) => {
+function GroupCard({ title, desc, link }) {
   return (
-    <Card className="h-100 shadow-sm">
-      <Card.Img variant="top" src={image} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{description}</Card.Text>
-        <Button variant="primary">Join</Button>
-      </Card.Body>
-    </Card>
+    <div className="col-md-4 mb-4">
+      <div className="card h-100">
+        <div className="card-body">
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">{desc}</p>
+          <a
+            href={link}
+            className="btn btn-outline-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+    </div>
   );
-};
+}
 
 export default GroupCard;

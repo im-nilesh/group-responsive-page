@@ -1,9 +1,13 @@
+/* src/components/ContactSection.css */
 .contact-section h2 {
-  font-weight: bold;
-  margin-bottom: 20px;
+  color: #0d6efd;
 }
 
-.contact-section p {
-  font-size: 1rem;
-  color: #444;
+.contact-section a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
 }

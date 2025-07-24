@@ -1,10 +1,15 @@
+// src/components/Footer.js
 import React from "react";
 import "./Footer.css";
 
-const Footer = () => (
-  <footer className="footer text-center py-3 bg-light">
-    <p>© 2025 Kuldeep Paswan. All rights reserved.</p>
-  </footer>
-);
+function Footer() {
+  return (
+    <footer className="footer text-center py-4">
+      <div className="container">
+        <p>&copy; 2025 Nadeem. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+}
 
 export default Footer;
