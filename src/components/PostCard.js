@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "../assets/3dot.png";
+import share from "../assets/share.png";
 
 const PostCard = ({ image, typeLogo, title, author, authorImg, views }) => {
   return (
@@ -28,7 +29,7 @@ const PostCard = ({ image, typeLogo, title, author, authorImg, views }) => {
               {views}
             </div>
             <button className="btn btn-light">
-              <img src="./images/share.png" alt="share" />
+              <img src={share} alt="share" />
             </button>
           </div>
         </div>
