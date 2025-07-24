@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from "../assets/3dot.png";
 
 const PostCard = ({ image, typeLogo, title, author, authorImg, views }) => {
   return (
@@ -9,7 +10,7 @@ const PostCard = ({ image, typeLogo, title, author, authorImg, views }) => {
         <div className="d-flex justify-content-between align-items-center">
           <h5 className="card-title">{title}</h5>
           <img
-            src="./images/3dot.png"
+            src={Menu}
             className="pe-2 dropdown-toggle"
             alt="menu"
             style={{ cursor: "pointer" }}

@@ -1,6 +1,8 @@
 import React from "react";
 import PostCard from "./PostCard";
 import GroupList from "./GroupList";
+import Article from "../assets/Article1.png";
+import ArticleLogo from "../assets/ArticleLogo.png"; // Assuming you have an ArticleLogo image
 
 const ProjectsSection = () => {
   return (
@@ -8,8 +10,8 @@ const ProjectsSection = () => {
       <div className="row">
         <div className="col-12 col-lg-8">
           <PostCard
-            image="./images/Article1.png"
-            typeLogo="./images/ArticleLogo.png"
+            image={Article}
+            typeLogo={ArticleLogo}
             title="What if famous brands had regular fonts? Meet RegulaBrands!"
             author="Sarthak Kamra"
             authorImg="./images/Owner 1.png"
